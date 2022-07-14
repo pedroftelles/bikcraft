@@ -1,0 +1,49 @@
+.header-content {
+  background: #000;
+  display: block;
+}
+
+.header {
+ max-width: 1200px;
+ margin: 0 auto;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ padding: 20px;
+ gap: 20px;
+ box-sizing: border-box;
+}
+
+.header-menu {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 40px;
+padding: 0px;
+margin: 0px;
+list-style: none;
+}
+
+.header-menu a {
+  color: #fff;
+  font-size: 18px;
+  padding: 16px 0px;
+  position: relative;
+  display: inline-block;
+}
+
+.header-menu a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: #ffffff;
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.header-menu a:hover:after {
+  width: 100%;
+}
