@@ -1,3 +1,39 @@
-@import "./global.css";
-@import "./header.css";
-@import "./introduction.css"
+/* Global */
+@import "../css/global/global.css";
+@import "../css/global/header.css";
+@import "../css/global/footer.css";
+
+/* Utilities */
+@import "../css/utilities/typ.css";
+@import "../css/utilities/color.css";
+@import "../css/utilities/components.css";
+@import "../css/utilities/forms.css";
+@import "../css/utilities/animation.css";
+
+/* Home */
+@import "../css/home/introduction.css";
+@import "../css/home/tecnologies.css";
+@import "../css/home/partiners.css";
+@import "../css/home/depositions.css";
+
+/* bicycles */
+@import "../css/bicycles/bicycles.css";
+@import "../css/bicycles/bicycles-internal.css";
+@import "../css/bicycles/bicycles-int.css";
+
+/* Insurance */
+@import "../css/insurance/insurance.css";
+@import "../css/insurance/insurance-internal.css";
+
+/* terms */
+@import "../css/terms/terms.css";
+
+/* budget */
+@import "../css/budget/budget.css";
+
+/* contacts */
+@import "../css/contacts/contacts.css";
+@import "../css/contacts/shops.css";
+
+/* Animation */
+

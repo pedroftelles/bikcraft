@@ -1,0 +1,104 @@
+.insurance-bg {
+  background-color: var(--c-11);
+}
+
+.insurance-container {
+  color: var(--c-w);
+  padding-top: 60px;
+}
+
+#insurance .insurance-container {
+  padding-top: 0px;
+}
+
+.insurance-container h2 {
+  padding-bottom: 60px;
+}
+
+.insurance-plans {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.insurance-silver {
+  background-color: var(--c-12);
+  padding: 32px 32px 32px 64px;
+  border-radius: 4px;
+  margin-top: 40px;
+  margin-bottom: 160px;
+}
+
+.silver {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.silver p {
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.insurance-price {
+  align-items: center;
+  text-align: end;
+}
+
+.insurance-button {
+  margin-top: 40px;
+}
+
+.insurance-plans ul {
+  padding-top: 40px;
+  position: relative;
+}
+
+.insurance-plans li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.insurance-plans li::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  background-image: url("../../img/icones/lista.svg");
+  position: absolute;
+  left: -20px;
+}
+
+.insurance-gold {
+  background-color: var(--c-12);
+  padding: 32px 32px 32px 64px;
+  border-radius: 4px;
+  margin-bottom: 120px;
+}
+
+.gold {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gold p {
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.insurance-price {
+  align-items: center;
+  text-align: end;
+}
+
+@media (max-width: 700px) {
+  .insurance-plans {
+    grid-template-columns: 1fr;
+  }
+  .insurance-silver, .insurance-gold {
+    margin-bottom: 40px;
+    margin-top: 0px;
+  }
+}

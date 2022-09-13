@@ -1,0 +1,64 @@
+.bicycles {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.bicycles-text {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.bicycles-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 0 20px 20px 20px;
+  overflow-x: auto;
+}
+
+.bicycles-list {
+  min-width: 280px;
+}
+.bicycles-img {
+  margin-bottom: 20px;
+}
+
+.bicycles-list p {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.bicycles-list p::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--c-p1);
+  margin-right: 8px;
+  transition: width 0.2s;
+}
+
+.bicycles-list:hover p::before {
+  width: 24px;
+}
+
+.bicycles-list span {
+  padding-left: 20px;
+}
+
+@media (max-width: 800px) {
+  .bicycles {
+    padding-bottom: 60px;
+  }
+  .bicycles-content {
+    gap: 20px;
+  }
+}

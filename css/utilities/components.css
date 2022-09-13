@@ -1,0 +1,132 @@
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button {
+  padding: 16px 32px;
+  text-decoration: none;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  color: var(--c-p5);
+  text-transform: uppercase;
+  line-height: 1.33;
+  border-radius: 4px;
+  display: inline-block;
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  border: none;
+  cursor: pointer;
+  max-width: max-content;
+}
+
+.button:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+@media (max-width: 600px) {
+  .button {
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+}
+
+.link {
+  display: inline-block;
+  color: var(--c-p1);
+  font: 500 1.5rem/1.5 "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 0px;
+  background: currentColor;
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.link:hover:after {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .link::after {
+    width: 100%;
+    transition: none;
+  }
+  .link:hover {
+    color: var(--c-w);
+  }
+}
+
+.button-secundary {
+  padding: 16px 32px;
+  text-decoration: none;
+  background: var(--c-10);
+  color: var(--c-4);
+  text-transform: uppercase;
+  line-height: 1.33;
+  border-radius: 4px;
+  display: inline-block;
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+}
+
+.button-secundary:hover {
+  background: var(--c-11);
+  color: var(--c-4);
+}
+
+.button.arrow {
+  display: flex;
+  align-items: center;
+}
+
+.button.arrow::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url("../../img/icones/seta.svg");
+  transition: trasnform 0.2s;
+}
+
+.button.arrow:hover::after {
+  transform: translateX(4px);
+}
+
+/* INTERNAL TITLES */
+
+.title-bg {
+  background-color: var(--c-11);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.title p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .title-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .title p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+}
+
+.icon-img {
+  max-width: 24px;
+  height: 24px;
+}
+

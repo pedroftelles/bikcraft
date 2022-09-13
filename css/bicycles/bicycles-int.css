@@ -1,0 +1,215 @@
+.bicycle-int {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 60px;
+  gap: 40px;
+  padding-bottom: 60px;
+  align-items: start;
+}
+
+.bicycles-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.bicycles-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.bicycles-img :nth-child(1) {
+  grid-column: 1/3;
+}
+
+.bicycles-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.bicycle-title {
+  grid-column: 1/3;
+  margin-bottom: 20px;
+}
+
+.bicycle-button {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+
+.buy-span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--c-12);
+  padding: 4px 8px;
+  gap: 10px;
+}
+
+
+.bicycles-details-2 {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 15px;
+ margin-bottom: 40px;
+}
+
+.bicycles-technologies {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 30px;
+ border-radius: 4px;
+
+}
+.bicycles-inf {
+  grid-column: 1/3;
+}
+
+.bicycles-technologies-2 h3 {
+  margin-bottom: 20px;
+}
+.bicycles-technologies-2 img{
+margin-bottom: 8px;
+}
+
+.bicycles-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px;
+  gap: 10px;
+}
+
+.bicycles-table li:nth-child(even) {
+  text-align: end;
+}
+
+.bicycle-title-2 {
+  margin-bottom: 20px;
+}
+
+.other-bicycles {
+  padding: 60px 20px;
+}
+
+.other-bicycles-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  overflow-x: auto;
+}
+
+.other-bicycles-title {
+  margin-bottom: 40px;
+}
+
+.other-bicycles-img img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.other-bicycles-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.span-price {
+  padding: 0 20px;
+}
+
+.other-bicycles-item p {
+  display: flex;
+  align-items: center;
+}
+
+.other-bicycles-item p::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--c-p1);
+  margin-right: 8px;
+  transition: width 0.2s;
+}
+
+.other-bicycles-item:hover p::before {
+  width: 24px;
+}
+
+.bicycle-insurance {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.bicycles-insurance-bg {
+  background-color: var(--c-11);
+  box-shadow: inset 0px -120px var(--c-12), inset 0px 120px var(--c-w);
+}
+
+.bicycle-insurance img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.bicycles-insurance-text {
+  padding: 180px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.bicycles-insurance-text a {
+  max-width: max-content;
+}
+
+@media (max-width: 1024px) {
+  .bicycle-button a {
+    text-align: center;
+  }
+}
+@media (max-width: 720px) {
+.bicycle-int {
+  grid-template-columns: 1fr;
+}
+.other-bicycles-img {
+  grid-template-columns: 1fr;
+}
+.bicycle-insurance {
+  grid-template-columns: 1fr;
+}
+.bicycles-insurance-text {
+  align-items: center;
+  padding: 40px;
+}
+.bicycle-insurance img {
+display: none;
+}
+.bicycles-insurance-bg {
+  box-shadow: none;
+}
+}
+
+@media (max-width: 500px) {
+.footer-container {
+  text-align: center;
+  justify-items: center;
+}
+.footer-icons {
+  justify-content: space-between;
+}
+}

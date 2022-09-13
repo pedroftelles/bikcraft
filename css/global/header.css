@@ -1,18 +1,15 @@
 .header-bg {
-  background: #000;
+  background: var(--c-12);
   display: block;
 }
 
 .header {
- max-width: 1200px;
- margin: 0 auto;
  display: flex;
  flex-wrap: wrap;
  justify-content: space-between;
  align-items: center;
  padding: 20px;
  gap: 20px;
- box-sizing: border-box;
 }
 
 .header-menu {
@@ -26,8 +23,6 @@ list-style: none;
 }
 
 .header-menu a {
-  color: #fff;
-  font-size: 18px;
   padding: 16px 0px;
   position: relative;
   display: inline-block;
@@ -39,21 +34,21 @@ list-style: none;
   display: block;
   height: 2px;
   width: 0px;
-  background: #ffffff;
+  background: var(--c-w);
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;
- 
 }
 
-.header-menu a:hover:after {
+.header-menu a:hover::after,
+.header-menu a.ativo::after {
   width: 100%;
 }
 
 @media (max-width: 800px) {
   .header-menu a{
     border-radius: 4px;
-    background-color: #111;
+    background-color: var(--c-12);
     padding: 12px 16px;
   }
   .header-menu a:hover:after {
@@ -77,7 +72,9 @@ list-style: none;
 @media (max-width: 400px) {
   .header-menu a{
     gap: 10px;
-    font-size: 14px;
     padding: 8px 12px;
+  }
+  .header-menu {
+    justify-content: center;
   }
 }
